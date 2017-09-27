@@ -11,4 +11,22 @@ class SetorController extends Controller {
         return view('setor');
     }
 
+    public function cadastro() {
+        return view('cadastrosetor');
+    }
+
+    public function inserirSetor() {
+//       $nome = \request::input('nome');
+//       
+//       $cargo = new Cargo();
+//       $cargo-> nome = $nome;
+//       $cargo->save();
+//      
+        $setor = new Setor();
+        $setor->nome = \Request::input('nome');
+
+        $setor->save();
+        return redirect('/');
+    }
+
 }

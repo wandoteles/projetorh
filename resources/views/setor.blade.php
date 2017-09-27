@@ -53,7 +53,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-success">Cadastrar</button>
+                        <a href="../public/cadastrosetor" class="btn btn-success">Cadastro de Setores</a>
                         <a href="../public" class="btn btn-danger">Voltar</a>
                     </div>
                     <!-- /.table-responsive -->

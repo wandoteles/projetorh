@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>SB Admin 2 - Bootstrap Admin Theme</title>
+        <title>RH Contabilidade - Soluções Financeiras</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -114,7 +114,7 @@
                 <!-- /.row -->
                 
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Lista de Funcionários
@@ -132,6 +132,7 @@
                                                     <th>CPF</th>
                                                     <th>Sálario</th>
                                                     <th>Cargo</th>
+                                                    <th>Data de Admissão</th>
                                                     <th>Ações</th>
                                                 </tr>
                                             </thead>
@@ -142,6 +143,7 @@
                                                     <td>0123456789</td>
                                                     <td>3.500,00</td>
                                                     <td>Supervisor</td>
+                                                    <td>29/03/2017</td>
                                                     <td><button type="button" class="btn btn-primary">Alterar</button>
                                                         <button type="button" class="btn btn-danger">Excluir</button></td>
                                                 </tr>
@@ -151,6 +153,7 @@
                                                     <td>0147258369</td>
                                                     <td>2.800,00</td>
                                                     <td>Analista de Sistemas</td>
+                                                    <td>19/05/2017</td>
                                                     <td><button type="button" class="btn btn-primary">Alterar</button>
                                                         <button type="button" class="btn btn-danger">Excluir</button></td>
                                                 </tr>
@@ -160,12 +163,13 @@
                                                     <td>0987456321</td>
                                                     <td>1.500,00</td>
                                                     <td>Analista de Testes</td>
-                                                    <td><button type="button" class="btn btn-primary">Alterar</button>
-                                                        <button type="button" class="btn btn-danger">Excluir</button></td>
+                                                    <td>10/01/2017</td>
+                                                    <td><a type="button" class="btn btn-primary">Alterar</a>
+                                                        <a type="button" class="btn btn-danger">Excluir</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <button type="button" class="btn btn-success">Cadastrar</button>
+                                        <a type="button" class="btn btn-success">Cadastrar</a>
                                         <a href="../public" class="btn btn-danger">Voltar</a>
                                     </div>
                                     <!-- /.table-responsive -->
