@@ -33,24 +33,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($setores as $s)
                                 <tr>
-                                    <td>1</td>
-                                    <td>Desenvolvimento de Sistemas</td>
+                            <td> {{$s->id}}</td>
+                            <td>{{$s->nome}}</td>
                                     <td><button type="button" class="btn btn-primary">Alterar</button>
                                         <button type="button" class="btn btn-danger">Excluir</button></td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Analise de Sistemas</td>
-                                    <td><button type="button" class="btn btn-primary">Alterar</button>
-                                        <button type="button" class="btn btn-danger">Excluir</button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Verificação de Software</td>
-                                    <td><button type="button" class="btn btn-primary">Alterar</button>
-                                        <button type="button" class="btn btn-danger">Excluir</button></td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                         <a href="../public/cadastrosetor" class="btn btn-success">Cadastro de Setores</a>

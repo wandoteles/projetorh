@@ -6,15 +6,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/funcionario', 'funcionariocontroller@exibir'); //Rotas do Funcionario
+Route::get('/funcionario', 'funcionariocontroller@exibir'); //Rotas do Funcionario-------------
 
-Route::get('/setor','setorcontroller@exibir'); //Rotas do Setor
+Route::get('/setor','setorcontroller@exibir'); //Rotas do Setor---------------
 
 Route::get('/cadastrosetor','setorcontroller@cadastro');
 
 Route::get('/cadastrosetor/inserir', 'setorcontroller@inserirSetor');
 
-Route::get('/cargo','cargocontroller@exibir'); //Rotas do Cargo
+Route::get('/cargo','cargocontroller@exibir'); //Rotas do Cargo-------------
 
-Route::get('/rescisao','rescisaocontroller@exibir'); //Rotas da Rescisão
+Route::get('/cadastrocargo','cargocontroller@cadastro');
+
+Route::get('/cadastrocargo/inserir','cargocontroller@inserirCargo');
+
+Route::get('/rescisao','rescisaocontroller@exibir'); //Rotas da Rescisão----------------
 

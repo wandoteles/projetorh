@@ -34,30 +34,18 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($cargos as $c)
                                 <tr>
-                                    <td>1</td>
-                                    <td>Supervisor</td>
-                                    <td>Desenvolvimento de Sistemas</td>
+                                    <td>{{$c->id}}</td>
+                                    <td>{{$c->nome}}</td>
+                                    <td>{{$c->setor->nome}}</td>
                                     <td><button type="button" class="btn btn-primary">Alterar</button>
                                         <button type="button" class="btn btn-danger">Excluir</button></td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Analista de Sistemas</td>
-                                    <td>Analise de Sistemas</td>
-                                    <td><button type="button" class="btn btn-primary">Alterar</button>
-                                        <button type="button" class="btn btn-danger">Excluir</button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Analista de Teste</td>
-                                    <td>Verificação de Software</td>
-                                    <td><button type="button" class="btn btn-primary">Alterar</button>
-                                        <button type="button" class="btn btn-danger">Excluir</button></td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-success">Cadastrar</button>
+                        <a href="../public/cadastrocargo" class="btn btn-success">Cadastro de Cargos</a>
                         <a href="../public" class="btn btn-danger">Voltar</a>
                     </div>
                     <!-- /.table-responsive -->
